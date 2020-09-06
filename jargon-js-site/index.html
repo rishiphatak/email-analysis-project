@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="text-center">
+
+    <h1>Aggie Jargon</h1>
+    <div class="btn btn-secondary" id="Rev_button_container"></div>
+    <div class="btn btn-secondary" id="Jimbo_button_container"></div>
+    <div class="btn btn-secondary" id="Yell_button_container"></div>
+    <div class="btn btn-secondary" id="fish_button_container"></div><br>
+    <div class="btn btn-secondary" id="msc_button_container"></div>
+    <div class="btn btn-secondary" id="mid_button_container"></div>
+    <div class="btn btn-secondary" id="ky_button_container"></div>
+    <div class="btn btn-secondary" id="ar_button_container"></div><br>
+
+    <input class="inline" dtype="text" id="fname" name="fname" placeholder="Enter Your Words Here">
+    <input class="btn btn-warning" type="submit" value="Add Words" onclick="addBoxWord()">
+    <div class="text-white bg-dark" id="a1"></div>
+    <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+    <input class="btn btn-secondary" type="submit" value="Submit for Evaluation" onclick="createFile()"><br>
+    <div class="h2 bg-white">SEC Football News</div>
+    <div class="h5 font-italic bg-white">From 247sports.com and Currents API</div>
+    <div class="text-blue bg-white font-weight-bold" id="art1"></div>
+    <div class="text-blue bg-white font-weight-bold" id="art2"></div>
+    <div class="text-blue bg-white font-weight-bold" id="art3"></div>
+
+  
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/github-api/dist/GitHub.min.js"></script>
+  
+    <!-- standalone (20.3kb) -->
+    <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
+    <script src = "Github.js"></script>
+    
+    <script src="app.js"></script>
+    <!-- Load our React component. -->
+    <!-- just github-api source (5.3kb) -->
+
+    <script src="words/rev_button.js"></script>
+    <script src="words/yell_button.js"></script>
+    <script src="words/jimbo_button.js"></script>
+    <script src="words/fish_button.js"></script>
+    <script src="words/MSC.js"></script>
+    <script src="words/MidnightYell.js"></script>
+    <script src="words/kyle.js"></script>
+    <script src="words/AggieRing.js"></script>
+    
+    
+    <script src="articles.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
